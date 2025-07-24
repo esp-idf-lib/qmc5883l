@@ -1,9 +1,4 @@
-.. Foo documentation master file, created by
-   sphinx-quickstart on Mon Jul 21 22:05:54 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+qmc5883l: Driver for QMC5883L 3-axis magnetic sensor
+====================================================
 
-Welcome to Foo's documentation!
-===============================
-
-.. doxygenfile:: template-component.h
+ .. doxygenfile:: qmc5883l.h
