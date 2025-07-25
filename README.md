@@ -11,7 +11,7 @@ Driver for QMC5883L 3-axis magnetic sensor.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/qmc5883l^1.0.0
+idf.py add-dependency esp-idf-lib/qmc5883l^1.0.0
 ```
 
 ## Support
