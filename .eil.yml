@@ -1,7 +1,7 @@
 ---
 name: qmc5883l
 description: Driver for QMC5883L 3-axis magnetic sensor
-version: 1.0.3
+version: 1.0.4
 groups:
   - magnetic
 code_owners: UncleRus
