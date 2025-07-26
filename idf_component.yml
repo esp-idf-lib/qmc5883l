@@ -1,5 +1,5 @@
 ---
-version: 1.0.1
+version: 1.0.2
 description: Driver for QMC5883L 3-axis magnetic sensor
 license: BSD-3
 targets:
