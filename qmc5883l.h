@@ -56,7 +56,8 @@ extern "C" {
 /**
  * Output data rate
  */
-typedef enum {
+typedef enum
+{
     QMC5883L_DR_10 = 0, //!< 10Hz
     QMC5883L_DR_50,     //!< 50Hz
     QMC5883L_DR_100,    //!< 100Hz
@@ -66,7 +67,8 @@ typedef enum {
 /**
  * Oversampling rate
  */
-typedef enum {
+typedef enum
+{
     QMC5883L_OSR_64 = 0, //!< 64 samples
     QMC5883L_OSR_128,    //!< 128 samples
     QMC5883L_OSR_256,    //!< 256 samples
@@ -76,7 +78,8 @@ typedef enum {
 /**
  * Field range
  */
-typedef enum {
+typedef enum
+{
     QMC5883L_RNG_2 = 0,//!< -2G..+2G
     QMC5883L_RNG_8     //!< -8G..+8G
 } qmc5883l_range_t;
@@ -84,7 +87,8 @@ typedef enum {
 /**
  * Mode
  */
-typedef enum {
+typedef enum
+{
     QMC5883L_MODE_STANDBY = 0, //!< Standby low power mode, no measurements
     QMC5883L_MODE_CONTINUOUS   //!< Continuous measurements
 } qmc5883l_mode_t;
@@ -113,7 +117,8 @@ typedef struct
 /**
  * Device descriptor
  */
-typedef struct {
+typedef struct
+{
     i2c_dev_t i2c_dev;
     qmc5883l_range_t range;
 } qmc5883l_t;

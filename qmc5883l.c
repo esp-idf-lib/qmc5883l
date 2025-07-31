@@ -166,7 +166,7 @@ esp_err_t qmc5883l_set_config(qmc5883l_t *dev, qmc5883l_odr_t odr, qmc5883l_osr_
     dev->range = rng;
     I2C_DEV_CHECK(&dev->i2c_dev, write_reg_nolock(dev, REG_FBR, 1)); // Define set/reset period
     I2C_DEV_CHECK(&dev->i2c_dev, write_reg_nolock(dev, REG_CTRL1,
-            (v & 0x03) | ((odr & 3) << 2) | ((rng & 1) << 4) | ((osr & 3) << 6)));
+                                                  (v & 0x03) | ((odr & 3) << 2) | ((rng & 1) << 4) | ((osr & 3) << 6)));
     I2C_DEV_GIVE_MUTEX(&dev->i2c_dev);
 
     return ESP_OK;
